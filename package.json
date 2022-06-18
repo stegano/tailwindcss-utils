@@ -1,0 +1,51 @@
+{
+  "name": "tailwindcss-utils",
+  "version": "0.0.1",
+  "description": "This is a useful utility for tiny and simple tailwindcss.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "pre-commit": "lint-staged",
+    "build": "rm -rf ./dist && babel src --out-dir dist --extensions \".ts\"",
+    "publish": "npm run build && npm publish",
+    "test": "jest"
+  },
+  "contributors": [
+    "Yongwoo Jung<stegano@naver.com"
+  ],
+  "dependencies": {
+    "csstype": "^3.1.0",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.0",
+    "lint-staged": "^13.0.0"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stegano/tailwindcss-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stegano/tailwindcss-utils/issues"
+  },
+  "homepage": "https://github.com/stegano/tailwindcss-utils#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^28.1.2",
+    "babel-preset-minify": "^0.5.2"
+  }
+}
