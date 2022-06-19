@@ -27,7 +27,7 @@ tailwindUtils.repeat("after", "p-1 m-1") // ⇒ `after:p-1 after:m-1`
 ...
 ```
 
-### merge(classNameList: string[], groups: Record<string, RegExp> = baseRegexGroup): string
+### merge(classNameList: string[], customRules?: Record<string, RegExp>): string
 > * This function can take multiple tailwindcss class values as arguments and merge them, and if there are duplicate class values, it uses the last input value.
 ```ts
 ...
