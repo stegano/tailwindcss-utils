@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a useful utility for tiny and simple tailwindcss.",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
